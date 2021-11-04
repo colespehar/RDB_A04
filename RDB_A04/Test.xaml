@@ -1,0 +1,36 @@
+﻿<Window x:Class="RDB_A04.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RDB_A04"
+        mc:Ignorable="d"
+        Title="DC Math Game" Height="700" Width="600" ResizeMode="NoResize"
+        Background="#d0e8f2">
+    <Window.Resources>
+        <Color x:Key="Color1">#FF79A3B1</Color>
+        <Color x:Key="Color2">#FF79A3B1</Color>
+        <Color x:Key="Color3">#FF456268</Color>
+        <Color x:Key="Color4">#FF333337</Color>
+    </Window.Resources>
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Height="100" Margin="155,113,161,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="questionDrop" Margin="189,297,195,308" FontSize="24" BorderBrush="#FF456268" SelectionChanged="questionDrop_SelectionChanged" FontWeight="SemiBold"/>
+        <Label x:Name="questionLbl" Content="Question" HorizontalAlignment="Left" Margin="180,132,0,0" VerticalAlignment="Top" Width="162" Height="50" FontSize="36" TextOptions.TextHintingMode="Animated" FontWeight="SemiBold"/>
+        <Button x:Name="questionBtn" Content="Submit" Margin="233,547,239,0" VerticalAlignment="Top" Height="58" Click="SubmitButton_Click" FontSize="24" Background="#FF333337" FontWeight="SemiBold">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource Color4}"/>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="questionID" Content="12" Margin="349,132,180,0" VerticalAlignment="Top" Height="50" FontSize="36" Foreground="Red" FontWeight="Bold"/>
+        <Label x:Name="questionText" Content="what is 10 x 10?" Margin="201,233,197,0" VerticalAlignment="Top" Height="50" FontSize="24" FontWeight="SemiBold" Foreground="#FF333337"/>
+        <Label x:Name="TimerLabel" Content="" HorizontalAlignment="Left" Margin="138,54,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
+        <Label x:Name="scoreLbl" Content="0" HorizontalAlignment="Left" Margin="486,54,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold" Width="38"/>
+        <Label Content="    Time&#xD;&#xA;Remaining:" HorizontalAlignment="Left" Margin="24,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.513,-0.038" FontSize="20" FontWeight="SemiBold"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="416,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.513,-0.038" FontSize="20" FontWeight="SemiBold"/>
+    </Grid>
+</Window>

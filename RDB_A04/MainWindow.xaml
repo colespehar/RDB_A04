@@ -1,0 +1,20 @@
+﻿<Window x:Class="RDB_A04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RDB_A04"
+        mc:Ignorable="d"
+        Title="DC Math Game" Height="700" Width="600" ResizeMode="NoResize"
+        Background="#d0e8f2">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Height="100" Margin="158,113,158,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="nameLbl" Content="Name:" HorizontalAlignment="Left" Margin="141,282,0,0" VerticalAlignment="Top" Height="41" Width="89" FontSize="24" FontWeight="SemiBold"/>
+        <TextBox x:Name="uName" Height="41" Margin="227,286,147,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="SemiBold"/>
+        <Button x:Name="startBtn" Content="Start" Margin="236,403,236,0" VerticalAlignment="Top" Height="58" Click="startBtn_Click" FontSize="24" Background="#FF333337" FontWeight="SemiBold" Foreground="White"/>
+        <Label x:Name="errorLbl" Content="" HorizontalAlignment="Left" Margin="237,332,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Foreground="Red" FontWeight="SemiBold"/>
+        <Button x:Name="leaderboardButton" Content="Leaderboard" Margin="214,557,214,0" VerticalAlignment="Top" Height="58" Click="leaderBoard_Click" FontSize="24" Background="#FF333337" FontWeight="SemiBold" Foreground="White"/>
+        <Label x:Name="questionLbl" Content="Math Test" HorizontalAlignment="Left" Margin="240,132,0,0" VerticalAlignment="Top" Width="173" Height="50" FontSize="36" TextOptions.TextHintingMode="Animated" FontWeight="SemiBold" Grid.ColumnSpan="2"/>
+        <Label x:Name="questionLbl_Copy" Content="DC" HorizontalAlignment="Left" Margin="179,132,0,0" VerticalAlignment="Top" Width="65" Height="50" FontSize="36" TextOptions.TextHintingMode="Animated" FontWeight="SemiBold" Foreground="Red"/>
+    </Grid>
+</Window>
